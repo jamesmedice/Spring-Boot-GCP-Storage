@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "qwiklabs-gcp-02-b2b0b499bc33",
+  "private_key_id": "c4c7bc36e99e7311e00a4ad11c107a94503aa9f8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/h8/YLIzCcA3f\n67e+bz8FASwj4KyLDZNDS/PpiqX3vAY/2wKqOU9xw0dVDtlmJ7218HQiWm4QgBv7\nNabsV4bfGmjIp/JTRklwXo0K48xyAepxTyN+T+1iv5KoShRm3WGuFyfMrQUibiZM\nOwUNLQD19KBAEXP80f7u1qxGgHYOc30BV0C3G2eO7sFNt/9WoDIx39F/nglkR5pi\nxv2FeKvK/ySBgzKSV6SEO8CROvjch7KVAxaLhG0eWt615SHh4oNdTO0XzUTsRewT\nPiMWdpv9n2QvGjDQhxLOFvjRniqCsN50oicYdX3qeJ1EM2KxTel858gENiYlcyD5\nKTuchIR7AgMBAAECggEAQ5dSKh/OrO+Ode9hsLrhqop3YVHwkkIALkenlEtxtrOM\nIQzRK/F9r9ASZFoRLpPnx0VMNrNjFD+hoE2W0uEwn5taTzW1tt2fHSDA9Y7en309\nly8uf20FgUvKHcnG2WZXCnDxgrGsljH5If3SEoxHQoVJ6FJAdIBHT1JDCb5b600J\nLQpNHkkcCw5jwGXS9Xmclz6Hw+WjBNs38YUk0qIM0+dBVrYAeNxjnzAMZrfPIhQq\nubCi5WQ7OGKK9mtpb8wQKLuo/iCqrZZp3xMAFtpH1eZwrSTFMxcOjDCMbsiODgNJ\nfBpv6NG0Ix2p+q85t6/ZdIZhB/CWjfWkp7+5P6XfgQKBgQD2ONRpXS6FLR8fkaIf\nFZEjxYskSyhsXgira7o5v2lbvBqz5hUI4ZunURLS0aUpgOofnvkFPrUQqZvcNjXo\nEFTA7X9YiOLgX0MIvm7XXoWPa3BVPsOe7o1pwb9gvkjoXe5e4p4+JwvFa1l4Y9AC\ngyXf6Hfitc3g/PWrQULh0EvOwwKBgQDHIvitoy0ldRaS9c2U3Gom8TX14M7LwGYb\nuB9g9B5fT8E6K8Z0+JVrfpB+RtgR1qoYV5W/8ZzKvTSRaK3mMPNT31Wp4RJ/T/zf\nX9Mc2s3otLzX/2uHyhulSwvJq9nD4tz7BEpwvmPSTM4QVDL6cpa2jzbladcQTzqT\nPA64BcoH6QKBgHDuceZ9ubeVkX/eQRi2wKJCmeYknr7NhnZxa7HO7FkJ9slqj11K\ndSUR12tggrt9iGTGensAXvXshTNEngb5bpYqmE0YQ88bgliBV79qeCHm6lf++KRt\nz+ig19FclX4Wjx1wHZpuOETtTtUcGqz8UCPZsRsHvg0imN9aiH2gFxUXAoGBAKYW\n5/zC/ZOhTfuy4g3HrQ3f31a9cx2D0mZKMnnGAlMSjSI8gqDq+I0YmeGIqwxt057L\n5k2acmCyYFbrTSeSKlEJFETFQY1IJKwWG1mUsWrm3B73nTM7gcVii2lgWRfFbvQ6\nBvB0C4PKpY/++injSwrm9i1wEn0656sHy2r3ASOJAoGBAMR3KaEwRIdLz4sJuWwY\ngXvgbjFenBahYnQUGZ1RPJ8mlDjKhwvoYWMxKPGDyjLAomwA+cAPSuw+7vgG30rn\nWFLB8kyXVjcV8gfzrf+LjqfBQaxS1CRz+T6LXnvrdD8IUb/kXcZryHTpefH/yx7J\nwgepgQ1+8WWK2mjKUMj7CcEl\n-----END PRIVATE KEY-----\n",
+  "client_email": "data-nosql-store-holder@qwiklabs-gcp-02-b2b0b499bc33.iam.gserviceaccount.com",
+  "client_id": "118015526919621517753",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/data-nosql-store-holder%40qwiklabs-gcp-02-b2b0b499bc33.iam.gserviceaccount.com"
+}
