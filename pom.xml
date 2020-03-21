@@ -21,7 +21,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<gcp.version>1.2.1.RELEASE</gcp.version>
-		<swagger2>3.0.0-SNAPSHOT</swagger2>
+		<swagger2>2.9.2</swagger2>
 	</properties>
 
 	<dependencies>
