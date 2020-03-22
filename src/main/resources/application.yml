@@ -1,5 +1,5 @@
 #set up properties
-PROJECT_ID: qwiklabs-gcp-02-b2b0b499bc33
+PROJECT_ID: qwiklabs-gcp-04-9265e3fc6464
 
 server:
     port: ${DEFAULT_PORT:80}
@@ -15,5 +15,5 @@ spring:
             credentials:
                 location: classpath:key.json  
             storage:
-                project-id: ${PROJECT_ID:qwiklabs-gcp-02-b2b0b499bc33}
+                project-id: ${PROJECT_ID:qwiklabs-gcp-04-9265e3fc6464}
                 enabled: true
