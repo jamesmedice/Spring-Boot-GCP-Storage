@@ -63,7 +63,7 @@ public class StorageController {
 
 	}
 
-	@RequestMapping(value = "/listObjects", method = RequestMethod.GET)
+	@RequestMapping(value = "/listObjects/{bucketName}", method = RequestMethod.GET)
 	public ResponseEntity<?> listObjects(@PathVariable String bucketName) {
 
 		try {
@@ -78,7 +78,7 @@ public class StorageController {
 
 	}
 
-	@RequestMapping(value = "/listBuckets", method = RequestMethod.GET)
+	@RequestMapping(value = "/listBuckets/{bucketName}", method = RequestMethod.GET)
 	public ResponseEntity<?> listBuckets(@PathVariable String bucketName) {
 
 		try {
