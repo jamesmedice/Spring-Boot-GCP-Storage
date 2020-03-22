@@ -49,8 +49,8 @@ public class StorageController {
 
 	}
 
-	@RequestMapping(value = "/metadata/{bucketName}", method = RequestMethod.GET)
-	public ResponseEntity<?> metadata(@PathVariable String bucketName) {
+	@RequestMapping(value = "/labels/{bucketName}", method = RequestMethod.GET)
+	public ResponseEntity<?> labels(@PathVariable String bucketName) {
 
 		try {
 			Storage storage = StorageOptions.getDefaultInstance().getService();
@@ -71,20 +71,6 @@ public class StorageController {
 			Bucket bucket = storage.get(bucketName, Storage.BucketGetOption.fields(Storage.BucketField.values()));
 			Page<Blob> blobs = bucket.list();
 			return new ResponseEntity(blobs, new HttpHeaders(), HttpStatus.OK);
-
-		} catch (Exception e) {
-			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-		}
-
-	}
-
-	@RequestMapping(value = "/listBuckets/{bucketName}", method = RequestMethod.GET)
-	public ResponseEntity<?> listBuckets(@PathVariable String bucketName) {
-
-		try {
-			Storage storage = StorageOptions.newBuilder().setProjectId(projectId).build().getService();
-			Bucket bucket = storage.get(bucketName, Storage.BucketGetOption.fields(Storage.BucketField.values()));
-			return new ResponseEntity(bucket, new HttpHeaders(), HttpStatus.OK);
 
 		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -122,5 +108,5 @@ public class StorageController {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 
-	} 
+	}
 }
