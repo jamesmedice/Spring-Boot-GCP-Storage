@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.google.api.gax.paging.Page;
 import com.google.cloud.storage.Blob;
 import com.google.cloud.storage.BlobId;
 import com.google.cloud.storage.BlobInfo;
@@ -42,35 +41,6 @@ public class StorageController {
 			Storage storage = StorageOptions.getDefaultInstance().getService();
 			Bucket bucket = storage.create(BucketInfo.of(bucketName));
 			return new ResponseEntity(bucket, new HttpHeaders(), HttpStatus.OK);
-
-		} catch (Exception e) {
-			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-		}
-
-	}
-
-	@RequestMapping(value = "/labels/{bucketName}", method = RequestMethod.GET)
-	public ResponseEntity<?> labels(@PathVariable String bucketName) {
-
-		try {
-			Storage storage = StorageOptions.getDefaultInstance().getService();
-			Bucket bucket = storage.create(BucketInfo.of(bucketName));
-			return new ResponseEntity(bucket.getLabels(), new HttpHeaders(), HttpStatus.OK);
-
-		} catch (Exception e) {
-			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-		}
-
-	}
-
-	@RequestMapping(value = "/listObjects/{bucketName}", method = RequestMethod.GET)
-	public ResponseEntity<?> listObjects(@PathVariable String bucketName) {
-
-		try {
-			Storage storage = StorageOptions.newBuilder().setProjectId(projectId).build().getService();
-			Bucket bucket = storage.get(bucketName, Storage.BucketGetOption.fields(Storage.BucketField.values()));
-			Page<Blob> blobs = bucket.list();
-			return new ResponseEntity(blobs, new HttpHeaders(), HttpStatus.OK);
 
 		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
