@@ -55,7 +55,7 @@ public class StorageController {
 		try {
 			Storage storage = StorageOptions.getDefaultInstance().getService();
 			Bucket bucket = storage.create(BucketInfo.of(bucketName));
-			return new ResponseEntity(bucket, new HttpHeaders(), HttpStatus.OK);
+			return new ResponseEntity(bucket.getLabels(), new HttpHeaders(), HttpStatus.OK);
 
 		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
